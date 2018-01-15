@@ -2,42 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>查令路十字街</title>
+    <title>hello world</title>
 </head>
 <body>
-    <h1>查令路十字街</h1>
-    <br>
-    <h2>你想对TA说什么</h2>
-    <form action="/msggate" method="post">
-        {% csrf_token %}
-        你是谁<br><input type="text" name="userA"> <br>
-        那个TA<br><input type="text" name="userB"> <br>
-        留言<br><input type="text" name="msg"> <br>
-        <input type="submit" value="寄出"> <br>
-    </form>
-
-    <h2>TA对我说了</h2>
-    <form action="/msggate" method="get">
-        那个TA<br><input type="text" name="userC"> <br>
-        <input type="submit" value="收取">
-    </form>
-
-    <table border="1">
-        <thead>
-            <th>时间</th>
-            <th>那个TA</th>
-            <th>对我说</th>
-        </thead>
-        <br>
-        <tbody>
-            {% for line in data %}
-            <tr>
-                <td>{{ line.time }}</td>
-                <td>{{ line.userA }}</td>
-                <td>{{ line.msg }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1799160764,1645001687&fm=27&gp=0.jpg">
+<br>
+你好，Django！
 </body>
 </html>
