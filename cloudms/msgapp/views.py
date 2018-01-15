@@ -26,5 +26,7 @@ def msgproc(request):
                         d = {'userA': linedata[0], 'msg': linedata[2], 'time': linedata[3]}
                         datalist.append(d)
 
-    return render(request, 'index.html', {'data': datalist})
+    return render(request,'msgapp.html',{'data':datalist})
 
+def index(request):
+    return render(request,'index.html')
